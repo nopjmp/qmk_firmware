@@ -139,14 +139,10 @@ void audio_init() {
         audio_initialized = true;
     }
     stop_all_notes();
-}
 
-void audio_startup(void) {
     if (audio_config.enable) {
         PLAY_SONG(startup_song);
     }
-
-    last_timestamp = timer_read();
 }
 
 void audio_toggle(void) {

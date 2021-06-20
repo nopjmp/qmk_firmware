@@ -75,7 +75,6 @@ typedef struct {
  * @post audio system (and hardware) initialized and ready to play tones
  */
 void audio_init(void);
-void audio_startup(void);
 
 /**
  * @brief en-/disable audio output, save this choice to the eeprom
@@ -217,8 +216,6 @@ void audio_decrease_tempo(uint8_t tempo_change);
 // conversion macros, from 64parts-to-a-beat to milliseconds and back
 uint16_t audio_duration_to_ms(uint16_t duration_bpm);
 uint16_t audio_ms_to_duration(uint16_t duration_ms);
-
-void audio_startup(void);
 
 // hardware interface
 
